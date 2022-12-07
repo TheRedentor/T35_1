@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T35_1</title>
+</head>
+<body>
+  <div>
+    <h1><strong>Alta Cliente</strong></h1>
+    <section style="display: flex; padding: 10px;"><p>Nombre: </p><input type="text" [(ngModel)]="name"></section>
+    <section style="display: flex; padding: 10px;"><p>CIF: </p><input type="text" [(ngModel)]="cif" ></section>
+    <section style="display: flex; padding: 10px;"><p>Dirección: </p><input type="text" [(ngModel)]="address"></section>
+    <section style="display: flex; padding: 10px;"><p>Grupo: </p><select [(ngModel)]="group"><option value="1">Grupo 1</option><option value="2">Grupo 2</option><option value="3">Grupo 3</option></select></section>
+    <button style="padding: 10px;" (click)="createClient()">Guardar</button>
+  </div>
+  <app-listado-clientes [clientes]="clientes"></app-listado-clientes>
+</body>
+</html>

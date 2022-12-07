@@ -1,0 +1,9 @@
+<h1>Listado clientes</h1>
+<div *ngFor="let cliente of clientes">
+  <div style="border-bottom: 1px black solid">
+    <div style="display: inline-block; margin: 20px 20px 20px 0px">{{ cliente.name }}</div>
+    <div style="display: inline-block; margin: 20px 20px 20px 0px">{{ cliente.cif }}</div>
+    <div style="display: inline-block; margin: 20px 20px 20px 0px">{{ cliente.address }}</div>
+    <div style="display: inline-block; margin: 20px 20px 20px 0px">{{ cliente.group }}</div>
+  </div>
+</div>
